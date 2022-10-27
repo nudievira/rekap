@@ -105,6 +105,7 @@ class FormController extends Controller
         $data_sales = [
             'kode'=>$request->kode,
             'tanggal'=>$request->tanggal,
+            'user_id'=>auth()->user()->id,
             'cust_id'=>$request->cust_id,
             'sub_total'=>$sub_total,
             'diskon'=>$single_diskon,

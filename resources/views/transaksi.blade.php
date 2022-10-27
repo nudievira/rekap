@@ -37,7 +37,7 @@
                 <tr>
                     <td>{{ $no }}</td>
                     <td>{{ $item->kode }}</td>
-                    <td>{{ $item->user->name }}</td>
+                    <td>{{ $item->customer->name }}</td>
                     <td>{{ number_format($jumlah_barang) }}</td>
                     <td>Rp {{ number_format($item->sub_total,2) }}</td>
                     <td>Rp {{ number_format($item->diskon,2) }}</td>

@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
+            $table->string('kode');
+            $table->string('name');
+            $table->bigInteger('telp');
             $table->timestamps();
         });
     }

@@ -11,13 +11,13 @@ class Sales extends Model
     protected $guarded = ['id'];
 
     public function user(){
-        return $this->belongsTo(User::class,'cust_id');
+        return $this->belongsTo(User::class,'user_id');
     }
     public function sales_details(){
         return $this->hasMany(SalesDetail::class,'sales_id');
     }
 
-    public function cutomer(){
-        return $this->belongsTo(Customer::class,'custid');
+    public function customer(){
+        return $this->belongsTo(Customer::class,'cust_id');
     }
 }

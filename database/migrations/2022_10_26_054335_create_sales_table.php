@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('kode');
             $table->dateTime('tanggal');
+            $table->foreignId('user_id');
             $table->foreignId('cust_id');
             $table->string('sub_total');
             $table->string('diskon');

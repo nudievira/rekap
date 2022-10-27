@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function transaksi(){
-        $data['title'] = 'Daftar Transaksi';
+;        $data['title'] = 'Daftar Transaksi';
         $data['data'] = auth()->user()->sales;
         return view('transaksi',$data);
     }
